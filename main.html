@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller for D&D</title>
+</head>
+<body>
+    <h1>Roll Dice</h1>
+    <p>Generate a random number from a specified range and add your own number:</p>
+    <form>
+        <label for="modifier">Modifier:</label>
+        <input type="number" id="modifier" value="0">
+        <br>
+        <button type="button" onclick="rollD4()">Roll D4</button>
+        <br>
+        <button type="button" onclick="rollD6()">Roll D6</button>
+        <br>
+        <button type="button" onclick="rollD8()">Roll D8</button>
+            <br>
+        <button type="button" onclick="rollD10()">Roll D10</button>
+        <br>
+        <button type="button" onclick="rollD12()">Roll D12</button>
+        <br>
+        <button type="button" onclick="rollD20()">Roll D20</button>
+        <br>
+        <button type="button" onclick="rollD100()">Roll D100</button>
+    </form>
+    <p id="result">Dice Roll: </p>
+
+    <script>
+        function rollD4() {
+            var min = 1;
+            var max = 4;
+            var modifier = parseInt(document.getElementById("modifier").value);
+
+            var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+            var result = randomNumber + modifier;
+            
+            document.getElementById("result").textContent = "Dice Roll: " + result;
+            
+        }
+        function rollD6() {
+            var min = 1;
+            var max = 6;
+            var modifier = parseInt(document.getElementById("modifier").value);
+
+            var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+            var result = randomNumber + modifier;
+
+            document.getElementById("result").textContent = "Dice Roll: " + result;
+        }
+        function rollD8() {
+            var min = 1;
+            var max = 8;
+            var modifier = parseInt(document.getElementById("modifier").value);
+
+            var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+            var result = randomNumber + modifier;
+
+            document.getElementById("result").textContent = "Dice Roll: " + result;
+        }
+        function rollD10() {
+            var min = 1;
+            var max = 10;
+            var modifier = parseInt(document.getElementById("modifier").value);
+
+            var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+            var result = randomNumber + modifier;
+
+            document.getElementById("result").textContent = "Dice Roll: " + result;
+        }
+        function rollD12() {
+            var min = 1;
+            var max = 12;
+            var modifier = parseInt(document.getElementById("modifier").value);
+
+            var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+            var result = randomNumber + modifier;
+
+            document.getElementById("result").textContent = "Dice Roll: " + result;
+        }
+        function rollD20() {
+            var min = 1;
+            var max = 20;
+            var modifier = parseInt(document.getElementById("modifier").value);
+
+            var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+            var result = randomNumber + modifier;
+
+            document.getElementById("result").textContent = "Dice Roll: " + result;
+        }
+        function rollD100() {
+            var min = 1;
+            var max = 100;
+            var modifier = parseInt(document.getElementById("modifier").value);
+
+            var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+            var result = randomNumber + modifier;
+
+            document.getElementById("result").textContent = "Dice Roll: " + result;
+        }
+    </script>
+    <h3>CHATGPT ASSISTED IN THE DEVELOPMENT OF THIS WEBSITE</h3>
+</body>
+</html>
